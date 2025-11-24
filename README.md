@@ -6,19 +6,19 @@ It scans an `audio/` folder for supported files, transcribes them, and saves all
 ---
 <br>
 
-## 🚀 Features
+## Features
 
-- 🔍 Automatically detects all audio files in the `audio/` folder
-- 🧠 Uses OpenAI’s **Whisper** model for accurate transcription
-- 🗣️ Supports multiple audio formats (`.mp3`, `.wav`, `.m4a`, `.flac`, `.ogg`, `.webm`)  
-- 💾 Saves transcripts neatly in a `transcripts.csv` file
-- ⚡ Flushes results to disk after every file (prevents data loss)  
-- ⏱️ Displays progress and elapsed time  
+- Automatically detects all audio files in the `audio/` folder
+- Uses OpenAI’s **Whisper** model for accurate transcription
+- Supports multiple audio formats (`.mp3`, `.wav`, `.m4a`, `.flac`, `.ogg`, `.webm`)  
+- Saves transcripts neatly in a `transcripts.csv` file
+- Flushes results to disk after every file (prevents data loss)  
+- Displays progress and elapsed time  
 
 ---
 <br>
 
-## 📦 Requirements
+## Requirements
 
 - **Python 3.8+**
 - **Dependencies:**
@@ -32,7 +32,7 @@ It scans an `audio/` folder for supported files, transcribes them, and saves all
 ---
 <br>
 
-## 🧩 Installing the Open-Source Whisper Module (Manual Method)
+## Installing the Open-Source Whisper Module (Manual Method)
 
 If you want to manually install Whisper from source, follow these steps:
 
@@ -76,7 +76,7 @@ On Linux (x86_64), it may also install triton>=2.0.0 if supported by your system
 ---
 <br>
 
-## 🎞️ Installing FFmpeg (Required for Audio Processing)
+## Installing FFmpeg (Required for Audio Processing)
 
 Download FFmpeg from:
 🔗 https://ffmpeg.org/download.html#build-windows
@@ -110,8 +110,8 @@ ffmpeg -version
 project/
 <br>│
 <br>├── audio/              # Folder containing your audio files
-<br>│   ├── example1.mp3
-<br>│   ├── example2.wav
+<br>│       ├── example1.mp3
+<br>│       ├── example2.wav
 <br>│
 <br>├── transcripts.csv     # Generated output (after running the script)
 <br>│
@@ -120,7 +120,7 @@ project/
 ---
 <br>
 
-## ⚙️ Usage
+## Usage
 Clone the repository:
 
   ```bash
@@ -138,7 +138,7 @@ python transcribe.py
 ---
 <br>
 
-## 🧠 Model Details
+## Model Details
 
 By default, the script loads the medium Whisper model:
   ```bash
@@ -159,7 +159,7 @@ transcribe_file(file_path, language="en")
 ---
 <br>
 
-## 🧰 Notes
+## Notes
 
 Whisper runs locally — no API key required
 <br>For faster performance, use a GPU (CUDA-compatible)
@@ -191,7 +191,7 @@ Whisper runs locally — no API key required
 ---
 <br>
 
-## 🧾 License
+## License
 
 This project is licensed under the MIT License.
 <br>You’re free to use, modify, and distribute it with attribution.
